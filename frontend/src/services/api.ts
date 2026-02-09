@@ -5,8 +5,10 @@ import axios from "axios";
  * All frontend ↔ backend communication goes through this file
  */
 const API = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: "/api",
 });
+
+export default API;
 
 /**
  * 🔐 Automatically attach JWT token to every request
